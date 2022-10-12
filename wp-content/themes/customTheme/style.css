@@ -1,0 +1,299 @@
+/*
+Theme Name : Custom Theme Developed By Rohan.
+Theme URI : devrohanpal.com.
+Author: Rohan Pal.
+Author URI: www.rohanpal.com
+Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda id soluta! Porro suscipit atque veritatis aliquam nemo tempora quam a dolor. Nisi harum doloremque quidem modi enim commodi, praesentium at fugit, magni incidunt voluptatum ad hic quae cum necessitatibus placeat nam earum sint totam error ea libero neque corporis eos. Laboriosam nihil assumenda atque aliquam cumque corporis suscipit porro, unde accusamus provident quis adipisci deserunt saepe distinctio autem ratione veniam quasi explicabo sit repellendus sapiente odio et? Odit doloribus eum quia laborum nisi amet nobis omnis quis obcaecati, excepturi deserunt debitis? Iure repudiandae quibusdam laborum consequatur temporibus, modi adipisci!
+*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* overflow-x: hidden; */
+    background-color: red;
+}
+
+html{
+    margin: 0px !important;
+}
+
+.bg-light {
+    background-color: burlywood m !important;
+}
+
+/* first banner */
+
+.first_banner{
+    background-image: url('./assets/img/1.png');
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_banner{
+    background-image: url('./assets/img/4.png');
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.heading_banner{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#first_banner_col{
+    display: flex;
+    justify-content: center;
+}
+
+.heading_main h1{
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.slider-content{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+}
+
+.slider-content{
+    max-width: 40%;
+}
+
+/*footer */
+
+.logo img{
+    /* display: inline-block; */
+    max-width: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 18px;
+}
+
+.footer{
+    background-color: #23222d;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-primary{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-data{
+    padding: 18px;
+    color: #fff;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(199, 199, 199, 0.637);
+    padding: 15px;
+    color: #fff;
+
+}
+
+
+.phone{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(199, 199, 199, 0.637);
+    padding: 15px;
+    color: #fff;
+}
+.email{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(199, 199, 199, 0.637);
+    border-bottom: 1px solid rgba(199, 199, 199, 0.637);
+    padding: 15px;
+    color: #fff;
+}
+
+/*cards*/
+.cards{
+    background-image: url('./assets/img/banner/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.cards {
+    color: #fff;
+}
+
+.card{
+    color: #000;
+}
+
+/* */
+
+/*navbar Css*/
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.current-menu-item a{
+    border-bottom: 2px solid red;
+    color: red !important;
+   
+}
+
+
+/*comments form */
+p.comment-form-comment {
+    display: flex;
+    flex-direction: column;
+}
+p.comment-form-author {
+    display: flex;
+    flex-direction: column;
+}
+p.comment-form-email{
+    display: flex;
+    flex-direction: column;
+}
+p.comment-form-url {
+    display: flex;
+    flex-direction: column;
+}
+
+p.form-submit> input {
+    padding: 10px 30px;
+    border: none;
+    background: #2fd92fa6;
+    border-radius: 10px;
+}
+
+/*menu */
+ul.sub-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+}
+
+.navbar >li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+ul.sub-menu > li{
+    position: relative;
+    top: 100%;
+    
+    padding: 10px;
+    color: white;
+}
+ul.sub-menu > li a{
+    color: white !important;
+
+}
+ul.sub-menu {
+    padding: 0px;
+    background-color: RED;
+}
+
+
+ul.sub-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+}
+
+
+.sidebar{
+    float: left;
+    padding: 30px;
+}
+
+.menu>li {
+    list-style: none;
+    padding: 10px;
+    
+}
+.menu>li > a{
+    
+    color: #000;
+    text-decoration: none;
+}
+
+#nav_menu-2{
+    list-style: none;
+}
+
+ol, ul {
+    padding-left: 0;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+    text-decoration: none;
+    
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 5px;
+}
+
+.current{
+    background-color: darkgray;
+    color: #000;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+    border: none;
+}
+
+/* error page */
+#error{
+    font-size: 50px;
+    font-weight: 500;
+    color: red;
+
+}
